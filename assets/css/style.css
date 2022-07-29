@@ -1,0 +1,13 @@
+root {
+    --primary: #75b4e3;
+    --secondary: #8fe0ff;
+    --darkPurple: #31255a;
+    --lightPurple: #54416d;
+    --gray: #3f3f3f;
+    --light: #fff;
+}
+
+
+* {
+    font-family: "Oswald", sans-serif;
+}
