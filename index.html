@@ -26,7 +26,7 @@
 
     <!-- Header Container -->
     <header class="container-fluid">
-        <div class="row navbar">
+        <div class="row navbar navbar-dark bg-dark">
             <div class="col-12 text-center">
                 <h1>Weather Dashboard</h1>
             </div>
@@ -38,7 +38,7 @@
     <main class="row">
 
         <!-- Search Header -->
-        <div class="col-3 pb-2 pt-2" id="searchResults">
+        <div class="col-3 pb-2 pt-3 bg-light" id="searchResults">
             <div class="row">
                 <div class="col-12">
                     <h4>Search for a City:</h4>
@@ -70,7 +70,7 @@
         <!-- Current Searched City -->
         <div id="weatherContent" class="col-9 pb-4 pt-4">
             <div class="row pb-3 mr-2 ml-2">
-                <div id="cityDetail" class="col-12 border rounded px-3 py-3 mt-4">
+                <div id="cityDetail" class="col-12 border rounded px-3 py-3">
 
                 </div>
             </div>
@@ -80,6 +80,10 @@
                 <div class="col-12 ml-2">
                     <h3>5 Day Forecast:</h3>
                 </div>
+            </div>
+
+            <div id="fiveDay" class="row pl-2">
+                <!-- Append 5 Day Forecast -->
             </div>
 
                 
@@ -95,6 +99,9 @@
 
     <!-- Moment JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
     <!-- Person JS file-->    
     <script src="./assets/js/script.js"></script>
