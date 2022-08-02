@@ -85,6 +85,7 @@ function futureCondition(lat, lon) {
         console.log(futureResponse);
         $("#fiveDay").empty();
         
+        // For loop for 5 Day Forecase
         for (let i = 1; i < 6; i++) {
             var cityInfo = {
                 date: futureResponse.daily[i].dt,
@@ -96,6 +97,7 @@ function futureCondition(lat, lon) {
             var currDate = moment.unix(cityInfo.date).format("MM/DD/YYYY");
             var iconURL = `<img src="https://openweathermap.org/img/w/${cityInfo.icon}.png" alt="${futureResponse.daily[i].weather[0].main}" />`;
 
+            // Save elements to URL to append later
             var futureCard = $(`
                 <div class="pl-3">
                     <div class="card pl-3 pt-3 mb-3 bg-primary text-light" style="width: 12rem;>
@@ -108,7 +110,7 @@ function futureCondition(lat, lon) {
                     </div>
                 <div>
             `);
-
+            // Append 5 Day Forecast
             $("#fiveDay").append(futureCard);
         }
     }); 

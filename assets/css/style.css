@@ -11,3 +11,11 @@ root {
 * {
     font-family: "Oswald", sans-serif;
 }
+
+.navbar {
+    color: #000;
+}
+
+h1 {
+    color: var(--light);
+}
